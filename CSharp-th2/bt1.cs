@@ -2,6 +2,8 @@
  Bai tap 1 chuong 2: Tinh chu vi , dien tich cua hinh tron
  Name: Nguyen Tien Dat
  Date: 29/10/2022
+ https://slidesgo.com/theme/social-issues-thesis-poverty-and-homelessness#search-famous+people&position-1&results-67&rs=search
+ https://slidesgo.com/theme/people-diversity-website-design#search-famous+people&position-42&results-67&rs=search
 */
 
 
