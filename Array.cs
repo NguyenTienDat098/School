@@ -206,5 +206,60 @@ namespace Arrayss
             }
             return true;
         }
+             // HAM RANDOM PHAN TU CHO MANG
+        static void TaoPhanTu(ref int[] arr, int length)
+        {
+            Random rand = new Random();
+            for (int i = 0; i < length; i++)
+            {
+                arr[i] = rand.Next(1, 10);
+            }
+        }
+        // HAM NHAP SO NGUYEN DUONG
+        static void NhapSoNguyen(ref int number, string message)
+        {
+            do
+            {
+                Console.Write(message);
+                int.TryParse(Console.ReadLine(), out number);
+            } while (number <= 0);
+        }
+        // HAM XUAT MANG
+        static void XuatMang(ref int[] arr)
+        {
+            foreach(var item in arr)
+            {
+                Console.Write(item + " ");
+            }
+        }
+        // HAM XOA PHAN TU 
+        static bool XoaPhanTu(ref int[] arr, int position)
+        {
+            if (position >= 0 && position < arr.Length)
+            {
+                for (int i = position; i < arr.Length - 1; i++)
+                {
+                    arr[i] = arr[i + 1];
+                }
+                Array.Resize<int>(ref arr, arr.Length - 1);
+                return true;
+            }
+            return false;
+        }
+        // HAM THEM PHAN TU 
+        static bool ThemPhanTu(ref int[] arr, int position, int value)
+        {
+            if (position >= 0 && position <= arr.Length)
+            {
+                Array.Resize<int>(ref arr, arr.Length + 1);
+                for (int i = arr.Length - 1; i > position; i--)
+                {
+                    arr[i] = arr[i - 1];
+                }
+                arr[position] = value;
+                return true;
+            }
+            return false;
+        }
     }
 }
